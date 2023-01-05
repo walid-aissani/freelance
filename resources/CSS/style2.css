@@ -1,0 +1,337 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    overflow: hidden;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins';
+    background: url(/resources/img/pexels-pixabay-38568.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    height: min-content;
+    
+}
+#navbar{
+    display: flex;
+    width:100%;
+    background-color:#f3f5f8  
+}
+.navinfo{
+    
+    width: 50%;
+    position:relative;
+    display:flex ;
+    align-items: stretch;
+    align-items: center;
+    justify-content: center;
+    color: black;
+margin:0 5% ;
+}
+.navinfo li{
+    list-style: none;
+    margin:0px 5px ;
+    
+}
+.navinfo li a{
+    font-size: 20px;
+    font-weight: 700;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none; 
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all .5s ease;
+}
+.navinfo li a:hover{
+    color:#7f00ff;
+    border-bottom: 5px solid #7f00ff;
+}
+
+#logo{
+    max-width: min-content;
+    margin:0% 5%;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #3d535f;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+b{
+    font-size: 40px;
+    color: #7f00ff;
+
+}
+.menu-nav a{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+}
+
+#sid-nav{
+
+display: none;
+padding: 100px 30px;
+right: -100%;
+position: absolute;
+width: 400px;
+height: 95%;
+bottom: 0;
+background-color: #b32513;
+margin: 0;
+z-index: 1;
+transition: all .5s ease;
+}
+section:hover #sid-nav{
+    right: 0;
+    transition: all ease-in-out 0.4s;
+}
+.btn-menu{
+    position:absolute;
+    cursor: pointer;
+    display: none;
+    right: 0;
+}
+#sid-nav a{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    font-size: 25px;
+    right: 0;
+    top: 0;
+    color:#111;
+    border-bottom: 2px solid transparent;
+    transition: all 1s ease;
+}
+#sid-nav a:hover{
+    border-bottom: 2px solid #9562ff;
+}
+#sid-nav img{  
+    color: #fff;
+    right: 0;
+}
+.btn-menu img{
+    
+    color: #fff;
+}
+header{
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #990011FF; 
+}
+.lists div{
+    margin: 10px;    
+}
+#contbtn{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid #ea4343;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    background-color: #ea4343;
+    color: #111;
+    margin-top: 4px;
+    transition: all ease 0.4s;
+    }
+    #contbtn:hover{
+    background-color: transparent;
+    }
+    .lists{
+        display:flex;
+        
+    }
+.coders{
+    background-color: #2e2e2e;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 32%;
+    height: 100%;
+    border-radius: 10px;
+    /*float: left;*/
+    box-shadow: 0 8px 13px rgba(0, 0, 0, 4);
+    transition: all ease 0.4s;
+    --color:#eb5ae5;
+}
+.coders:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+.coders:hover .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color);;
+    color: #222;
+    box-shadow: 0 0 4px #2e2e2e,
+    0 0 50px var(--color);;
+}
+.coders:hover .readmo{
+    background-color: #2e2e2e;
+    color:var(--color);
+    
+}
+.designer{
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+    height: 100%;
+    border-radius: 10px;
+   /* float: left;*/
+    box-shadow: 0 8px 13px rgba(0, 0, 0, 4);
+    transition: all ease 0.4s;
+    --color:#5b98eb;
+}
+.designer:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+.designer:hover .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color);;
+    color: #222;
+    box-shadow: 0 0 4px #2e2e2e,
+    0 0 50px var(--color);;
+}
+.designer:hover .readmo{
+    background-color: #2e2e2e;
+    color:var(--color);
+    
+}
+.developer{
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:32% ;
+    height: 100%;
+    border-radius: 10px;
+    /*float: right;*/
+    box-shadow: 0 8px 13px rgba(0, 0, 0, 4);
+    transition: all ease 0.4s;
+    --color:greenyellow;
+}
+.developer:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+.icon{
+    border: 2px solid var(--color);;
+    padding: 25px;
+    color: var(--color);;
+    box-shadow: 0 0 4px #2e2e2e,
+    0 0 6px var(--color);;
+    transition: all ease-in-out 0.44s;
+}
+.developer:hover .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color);;
+    color: #222;
+    box-shadow: 0 0 4px #2e2e2e,
+    0 0 50px var(--color);;
+}
+.readmo{
+    font-size: 10px;
+    color: #222;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--color);
+    background-color: var(--color);
+    padding: 0px 30px;
+    transition: all ease-in-out 0.44s;
+}
+.developer:hover .readmo{
+    background-color: #2e2e2e;
+    color:var(--color);
+    
+}
+span{
+    color: #fff;
+    font-weight: 800;
+    font-size: 23px;
+    margin-top: 20px;
+}
+p{
+    color: #999;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+
+
+@media screen and (max-width:768px){
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: scroll; 
+}
+.navinfo{
+    display: none;
+    transition: all ease 0.4s;
+}
+.contbtns{
+    display: none;
+    transition: all ease 0.4s;
+}
+#logo{
+    margin: 0 40%;
+    transition: all ease-in-out 1s;
+}
+.btn-menu{
+    display: flex;
+}
+#sid-nav{
+    display: grid;
+    position: fixed;
+    z-index: 1;
+}
+.lists{
+    flex-wrap: wrap;
+    transition: all ease 0.4s;
+}
+.coders{
+    width: 46%;
+}
+.designer{
+    width: 46%;
+    
+}
+.developer{
+    width: 45%;
+}
+#navbar{
+    position:fixed;
+}
+}
